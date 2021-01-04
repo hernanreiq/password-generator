@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 300px;
+    margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+    background-image: url("../img/fondo.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+main {
+    background-color: rgba(0, 68, 99, 0.75);
+    border-radius: 20px;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0px;
+    background-color: rgba(255, 217, 0, 0.801);
+    border-radius: 20px;
+    border: solid 2px black;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+}
+div.configuracion {
+    text-align: center;
+    background-color: rgba(104, 157, 255, 0.808);
+    border-radius: 20px;
+    border: solid 2px black;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+}
+div.opciones {
+    margin-bottom: 20px;
+}
+div.opciones h2 {
+    font-size: 20px;
+}
+div.opciones button, div.resultado button {
+    margin: 3px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.negativo {
+    background-color: rgb(255, 72, 72);
+    border: solid 2px black;
+}
+.positivo {
+    background-color: rgb(87, 255, 72);
+    border: solid 2px black;
+}
+div.opciones input {
+    max-width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid 2px black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { 
+    -moz-appearance:textfield; 
+}
+#generar {
+    background-color: gold;
+    width: 200px;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+#generar:hover {
+    background-color: black;
+    border: solid 2px gold;
+    color: gold;
+}
+div.resultado {
+    text-align: center;
+    background-color: rgba(255, 217, 0, 0.801);
+    border: solid 2px black;
+    border-radius: 20px;
+}
+div.resultado h2 {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+}
+div.resultado p {
+    margin: 20px 0px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    font-size: 20px;
+    display: none;
+}
+div.resultado input {
+    width: 250px;
+    height: 30px;
+    border: black solid 2px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(87, 255, 72);
+    background-color: rgba(0, 0, 0, 0.808);
+}
+div.resultado button#copiar {
+    margin: 10px 0px;
+}
+div.creditos {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 20px;
+    color: white;
+}
+div.creditos p a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+}

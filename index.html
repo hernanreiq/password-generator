@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/2acc1475d8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Generador de contraseñas</title>
+</head>
+<body>
+    <main>
+        <h1>Generador de contraseñas</h1>
+        <div class="configuracion">
+            <h2>Configuración</h2><br>
+            <div class="opciones">
+                <h2>¿Incluir minúsculas?</h2>
+                <button class="positivo" id="minusculas">Activado</button>
+            </div>
+            <div class="opciones">
+                <h2>¿Incluir mayúsculas?</h2>
+                <button class="positivo" id="mayusculas">Activado</button>
+            </div>
+            <div class="opciones">
+                <h2>¿Incluir números?</h2>
+                <button class="positivo" id="numeros">Activado</button>
+            </div>
+            <div class="opciones">
+                <h2>¿Incluir símbolos?</h2>
+                <button class="positivo" id="simbolos">Activado</button>
+            </div>
+            <div class="opciones">
+                <h2>Cantidad de carácteres</h2>
+                <button id="negativo" class="negativo"><i class="fas fa-minus"></i></button><input type="number" id="cantidad-caracteres" value="8" readonly><button id="positivo" class="positivo"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="opciones">
+                <button id="generar">Generar contraseña</button>
+            </div>
+        </div>
+        <div class="resultado">
+            <div class="contenido-resultado">
+                <h2>Resultado</h2>
+                <p id="alerta-copiar">¡Contraseña copiada!</p>
+                <input type="text" id="resultado" readonly><br>
+                <button id="copiar" class="positivo">Copiar</button>
+            </div>
+        </div>
+        <div class="creditos">
+            <p>Diseño y desarrollo hecho por: <a href="https://hernanreiq.github.io/portafolio/" target="_blank">Hernan.Reiq</a></p>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
